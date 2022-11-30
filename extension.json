@@ -1,5 +1,5 @@
 {
-  "serviceCode" : "machine-usage",
+  "serviceCode" : "test20221123-13",
   "itemList" : [ {
     "itemCode" : "envNav",
     "props" : { }
