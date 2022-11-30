@@ -1,0 +1,7 @@
+{
+  "serviceCode" : "machine-usage",
+  "itemList" : [ {
+    "itemCode" : "envNav",
+    "props" : { }
+  } ]
+}

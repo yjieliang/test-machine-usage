@@ -1,0 +1,4 @@
+server:
+  port: 8080  # 扩展服务的端口（统一规定成8080，请勿改动）
+  servlet:
+     context-path: /api # 扩展服务的上下文路径（统一规定成/api，请勿改动）
