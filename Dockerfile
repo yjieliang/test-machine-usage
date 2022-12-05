@@ -10,8 +10,10 @@ ARG packageName
 # 设置环境变量
 ENV PACKAGE_NAME=${packageName}
 
+ENV SERVICE_CODE=${serviceCode}
+
 # 维护者信息
-MAINTAINER lockiechen lockiechen@tencent.com
+MAINTAINER v_yjieliang
 
 # 设置工作目录
 WORKDIR /data/ext/service
@@ -22,7 +24,7 @@ WORKDIR /data/ext/service
 ADD ./devops_release/* /data/ext/service/
 ADD start.sh /data/ext/service/start.sh
 
-COPY ./frontend/dist /usr/share/nginx/static
+COPY ./frontend/dist /usr/share/nginx/service/${serviceCode}/static
 
 # 设置ENTRYPOINT
 ENTRYPOINT ["/bin/sh", "/data/ext/service/start.sh"]
